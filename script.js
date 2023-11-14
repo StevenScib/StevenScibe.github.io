@@ -5,6 +5,7 @@ function check(playerChoice){
     if (playerChoice === computerChoice) {
         document.getElementById('winner').innerText = "It's a tie! :/";
     } 
+    
     else if (playerChoice === 'rock') {
         if (computerChoice === 'scissors') {
             document.getElementById('winner').innerText = 'You win! Rock beats scissors. :)';
@@ -12,6 +13,7 @@ function check(playerChoice){
             document.getElementById('winner').innerText = 'You lose! Paper beats rock. :(';
         }
     } 
+
     else if (playerChoice === 'paper') {
         if (computerChoice === 'rock') {
             document.getElementById('winner').innerText = 'You win! Paper beats rock. :)';
@@ -19,6 +21,7 @@ function check(playerChoice){
             document.getElementById('winner').innerText = 'You lose! Scissors beats paper. :(';
         }
     } 
+
     else if (playerChoice === 'scissors') {
         if (computerChoice === 'paper') {
             document.getElementById('winner').innerText = 'You win! Scissors beats paper. :)';
