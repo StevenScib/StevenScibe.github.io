@@ -1,3 +1,4 @@
+var clickCount = 0;
 function check(playerChoice){
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -28,5 +29,15 @@ function check(playerChoice){
         } else {
             document.getElementById('winner').innerText = 'You lose! :( Rock beats scissors try again by clicking any choice again.';
         }
-    } 
+    }
+        clickCount++;
+        function disableButtons() {
+            var buttons = document.getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = true;
+            }
+        }
+        if (clickCount === 3) {
+            disableButtons();
+        } 
 }
