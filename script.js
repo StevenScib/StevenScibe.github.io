@@ -12,6 +12,7 @@ function check(playerChoice){
             document.getElementById('winner').innerText = 'You win! :) Rock beats scissors, try again by clicking any choice again.';
         } else {
             document.getElementById('winner').innerText = 'You lose! :( Paper beats rock try again by clicking any choice again.';
+            disableButtons();
         }
     } 
 
@@ -20,6 +21,7 @@ function check(playerChoice){
             document.getElementById('winner').innerText = 'You win! :) Paper beats rock try again by clicking any choice again.';
         } else {
             document.getElementById('winner').innerText = 'You lose! :( Scissors beats paper try again by clicking any choice again.';
+            disableButtons();
         }
     } 
 
@@ -28,6 +30,7 @@ function check(playerChoice){
             document.getElementById('winner').innerText = 'You win! :) Scissors beats paper try again by clicking any choice again.';
         } else {
             document.getElementById('winner').innerText = 'You lose! :( Rock beats scissors try again by clicking any choice again.';
+            disableButtons();
         }
     }
         clickCount++;
