@@ -40,7 +40,7 @@ function check(playerChoice){
                 buttons[i].disabled = true;
             }
         }
-        if (clickCount === 3) {
+        if (clickCount === 5) {
             disableButtons();
         } 
 }
